@@ -16,3 +16,5 @@ function Player() {
         </article>
     );
 }
+
+export default Player;
