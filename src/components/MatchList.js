@@ -16,3 +16,5 @@ function MatchList(props) {
     </section>
   );
 }
+
+export default MatchList;
