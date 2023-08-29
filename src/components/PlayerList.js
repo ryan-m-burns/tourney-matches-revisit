@@ -4,17 +4,21 @@ import Player from "./Player";
 function PlayerList(props) {
   const { playerData } = props;
 
-  const onePlayer = playerData[0];
+  const players = playerData.map((player) => {
+    return (
+      <Player
+        gamerTag={player.gamerTag}
+        firstName={player.firstName}
+        lastName={player.lastName}
+        wins={player.wins}
+      />
+    );
+  });
 
   return (
     <section className="PlayerList">
       <h1>Current Participating Players</h1>
-      <Player
-        gamerTag={onePlayer.gamerTag}
-        firstName={onePlayer.firstName}
-        lastName={onePlayer.lastName}
-        wins={onePlayer.wins}
-      />
+      {players}
     </section>
   );
 }

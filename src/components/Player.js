@@ -11,7 +11,7 @@ function Player(props) {
 
       {wins === 0 && <h2 className="zero">Currently with no wins :(</h2>}
       {wins === 1 && <h2>Currently at {wins} win</h2>}
-      {wins > 1 && <h2>Currently at {wins} win</h2>}
+      {wins > 1 && <h2>Currently at {wins} wins</h2>}
 
       {/* 
        To be shown when there is no wins 
