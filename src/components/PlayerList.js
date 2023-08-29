@@ -1,6 +1,6 @@
 import React from "react";
 import Player from "./Player";
-import playerData from "../data/playerData";
+
 
 import { preparePlayerData, addWinsToPlayer } from "../helpers/playerHelpers";
 
