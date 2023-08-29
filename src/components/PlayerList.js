@@ -1,10 +1,11 @@
 import React from "react";
 import Player from "./Player";
 import playerData from "../data/playerData";
-import matchData from "../data/matchData";
+
 import { preparePlayerData, addWinsToPlayer } from "../helpers/playerHelpers";
 
 function PlayerList(props) {
+  const { matchData, playerData } = props;
   const playerDataArray = preparePlayerData(playerData);
   const parsedPlayerData = addWinsToPlayer(playerDataArray, matchData);
   const onePlayer = parsedPlayerData[0];

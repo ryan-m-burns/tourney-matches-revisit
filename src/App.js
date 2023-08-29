@@ -1,8 +1,10 @@
 //import logo from './logo.svg';
-import './App.css';
-import PlayerList from './components/PlayerList';
-import MatchList from './components/MatchList';
-import Player from './components/Player';
+import "./App.css";
+import PlayerList from "./components/PlayerList";
+import MatchList from "./components/MatchList";
+import matchData from "./data/matchData";
+import playerData from "./data/playerData";
+
 function App() {
   return (
     <div className="App">
@@ -10,8 +12,8 @@ function App() {
         Tournament Matches{" "}
         <span>Where Coding and Tournaments found their Match!</span>
       </h1>
-      <PlayerList />
-      <MatchList />
+      <PlayerList matchData={matchData} playerData={playerData} />
+      <MatchList matchData={matchData} />
     </div>
   );
 }
