@@ -1,6 +1,8 @@
 import React from "react";
 
-function Player() {
+function Player(props) {
+  const { gamerTag, firstName, lastName, wins } = props;
+
   return (
     <article className="Player">
       <h1>
