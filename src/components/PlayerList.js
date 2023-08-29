@@ -2,9 +2,9 @@ import React from "react";
 import Player from "./Player";
 
 function PlayerList(props) {
-  const { parsedPlayerData } = props;
+  const { playerData } = props;
 
-  const onePlayer = parsedPlayerData[0];
+  const onePlayer = playerData[0];
 
   return (
     <section className="PlayerList">
